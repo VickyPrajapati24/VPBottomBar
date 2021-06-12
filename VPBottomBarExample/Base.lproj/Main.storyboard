@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="36m-1J-RaD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="l5O-rW-pum">
+            <objects>
+                <navigationController id="36m-1J-RaD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="b5A-cH-xFg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FmN-H5-YB8" kind="relationship" relationship="rootViewController" id="4gf-1b-vzU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMi-CK-ayw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-675" y="52"/>
+        </scene>
+        <!--VPBottomBar-->
+        <scene sceneID="aVw-KP-NkX">
+            <objects>
+                <viewController id="FmN-H5-YB8" customClass="ViewController" customModule="VPBottomBarExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3q4-aJ-gBG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hF7-df-Rmq">
+                                <rect key="frame" x="0.0" y="140" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pE2-rt-Wc3" customClass="VPBottomBar" customModule="VPBottomBar">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4TZ-Nv-xUS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JKk-OW-1DC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pE2-rt-Wc3" firstAttribute="bottom" secondItem="JKk-OW-1DC" secondAttribute="bottom" id="Bg1-3g-Wgh"/>
+                            <constraint firstItem="JKk-OW-1DC" firstAttribute="trailing" secondItem="pE2-rt-Wc3" secondAttribute="trailing" id="HEI-zc-YXF"/>
+                            <constraint firstItem="pE2-rt-Wc3" firstAttribute="leading" secondItem="JKk-OW-1DC" secondAttribute="leading" id="KoD-ZD-PNN"/>
+                            <constraint firstItem="hF7-df-Rmq" firstAttribute="leading" secondItem="JKk-OW-1DC" secondAttribute="leading" id="dmx-ST-gOT"/>
+                            <constraint firstItem="pE2-rt-Wc3" firstAttribute="top" secondItem="hF7-df-Rmq" secondAttribute="bottom" id="gbX-uO-JmG"/>
+                            <constraint firstItem="hF7-df-Rmq" firstAttribute="top" secondItem="JKk-OW-1DC" secondAttribute="top" id="iRd-gC-ikg"/>
+                            <constraint firstItem="JKk-OW-1DC" firstAttribute="trailing" secondItem="hF7-df-Rmq" secondAttribute="trailing" id="wwR-Az-zXo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VPBottomBar" id="HVF-7q-dpq"/>
+                    <connections>
+                        <outlet property="bottomBar" destination="pE2-rt-Wc3" id="wPf-He-qqh"/>
+                        <outlet property="webView" destination="hF7-df-Rmq" id="X03-Op-cnq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHB-Qb-B63" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
