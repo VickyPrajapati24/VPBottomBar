@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8t4-Wu-Y4o">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VPBottomBar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VPBottomBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3h-QZ-0Gx">
+                                <rect key="frame" x="0.0" y="140" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8M4-vJ-ZCA" customClass="VPBottomBar" customModule="VPBottomBar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ode-Ui-54l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8M4-vJ-ZCA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Jc-2I-CPp"/>
+                            <constraint firstItem="8M4-vJ-ZCA" firstAttribute="top" secondItem="D3h-QZ-0Gx" secondAttribute="bottom" id="FXx-I5-Hlh"/>
+                            <constraint firstItem="D3h-QZ-0Gx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NBk-n5-tUA"/>
+                            <constraint firstItem="D3h-QZ-0Gx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tsn-fF-2bv"/>
+                            <constraint firstItem="8M4-vJ-ZCA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hvT-ig-bbD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D3h-QZ-0Gx" secondAttribute="trailing" id="mkY-UK-Buq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8M4-vJ-ZCA" secondAttribute="trailing" id="yi0-Ln-iyh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VPBottomBar" id="mMi-fd-SKe"/>
+                    <connections>
+                        <outlet property="bottomBar" destination="8M4-vJ-ZCA" id="Mer-4q-uAR"/>
+                        <outlet property="webView" destination="D3h-QZ-0Gx" id="AUZ-gk-FD6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="52"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XQW-yk-gcr">
+            <objects>
+                <navigationController id="8t4-Wu-Y4o" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="tic-Eu-KkB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4eg-uY-pvQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24W-Ql-CKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-675" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

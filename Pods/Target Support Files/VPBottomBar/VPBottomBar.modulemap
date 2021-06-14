@@ -1,6 +1,0 @@
-framework module VPBottomBar {
-  umbrella header "VPBottomBar-umbrella.h"
-
-  export *
-  module * { export * }
-}

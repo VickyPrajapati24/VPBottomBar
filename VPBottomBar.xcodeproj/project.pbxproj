@@ -3,147 +3,122 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66C9114FBB48AAF43348EE53 /* Pods_VPBottomBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92CFD87AC29CB8830B07300 /* Pods_VPBottomBar.framework */; };
-		7EFF7D723241D6BD12BBA765 /* Pods_VPBottomBarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E662951867F2B937CF2D77 /* Pods_VPBottomBarExample.framework */; };
-		98E98D622674C57D0097A304 /* VPBottomBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E98D602674C57D0097A304 /* VPBottomBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98E98D692674C64B0097A304 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E98D682674C64B0097A304 /* HelloWorld.swift */; };
-		98E98DAF2674CB7D0097A304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E98DAE2674CB7D0097A304 /* AppDelegate.swift */; };
-		98E98DB32674CB7D0097A304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E98DB22674CB7D0097A304 /* ViewController.swift */; };
-		98E98DB62674CB7D0097A304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E98DB42674CB7D0097A304 /* Main.storyboard */; };
-		98E98DB82674CB7D0097A304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E98DB72674CB7D0097A304 /* Assets.xcassets */; };
-		98E98DBB2674CB7D0097A304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E98DB92674CB7D0097A304 /* LaunchScreen.storyboard */; };
+		989BCCA626733BB100FC945D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989BCCA526733BB100FC945D /* AppDelegate.swift */; };
+		989BCCAA26733BB100FC945D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989BCCA926733BB100FC945D /* ViewController.swift */; };
+		989BCCAD26733BB100FC945D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989BCCAB26733BB100FC945D /* Main.storyboard */; };
+		989BCCAF26733BB200FC945D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989BCCAE26733BB200FC945D /* Assets.xcassets */; };
+		989BCCB226733BB200FC945D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989BCCB026733BB200FC945D /* LaunchScreen.storyboard */; };
+		98E98DE92674D4500097A304 /* VPBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E98DE42674D4500097A304 /* VPBottomBar.swift */; };
+		98E98DEA2674D4500097A304 /* VPBottomBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E98DE52674D4500097A304 /* VPBottomBarProtocol.swift */; };
+		98E98DEB2674D4500097A304 /* VPBottomSubBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E98DE62674D4500097A304 /* VPBottomSubBar.swift */; };
+		98E98DEC2674D4500097A304 /* UICollectionViewCenterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E98DE72674D4500097A304 /* UICollectionViewCenterLayout.swift */; };
+		98E98DED2674D4500097A304 /* BottomBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E98DE82674D4500097A304 /* BottomBarCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		98E98D432674B3830097A304 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0A889BD4469136B6DBC656D2 /* Pods-VPBottomBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPBottomBar.debug.xcconfig"; path = "Target Support Files/Pods-VPBottomBar/Pods-VPBottomBar.debug.xcconfig"; sourceTree = "<group>"; };
-		2832232C9FF08CBB09233402 /* Pods-VPBottomBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPBottomBar.release.xcconfig"; path = "Target Support Files/Pods-VPBottomBar/Pods-VPBottomBar.release.xcconfig"; sourceTree = "<group>"; };
-		4664150EB079AA41DB8785FA /* Pods-VPBottomBarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPBottomBarExample.debug.xcconfig"; path = "Target Support Files/Pods-VPBottomBarExample/Pods-VPBottomBarExample.debug.xcconfig"; sourceTree = "<group>"; };
-		50AD9A11BF5F9E8279EB53BF /* Pods-VPBottomBarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VPBottomBarExample.release.xcconfig"; path = "Target Support Files/Pods-VPBottomBarExample/Pods-VPBottomBarExample.release.xcconfig"; sourceTree = "<group>"; };
-		98E98D5D2674C57D0097A304 /* VPBottomBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VPBottomBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98E98D602674C57D0097A304 /* VPBottomBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPBottomBar.h; sourceTree = "<group>"; };
-		98E98D612674C57D0097A304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98E98D682674C64B0097A304 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
-		98E98DAC2674CB7D0097A304 /* VPBottomBarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPBottomBarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		98E98DAE2674CB7D0097A304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98E98DB22674CB7D0097A304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98E98DB52674CB7D0097A304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98E98DB72674CB7D0097A304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		98E98DBA2674CB7D0097A304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		98E98DBC2674CB7D0097A304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7E662951867F2B937CF2D77 /* Pods_VPBottomBarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPBottomBarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92CFD87AC29CB8830B07300 /* Pods_VPBottomBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VPBottomBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		989BCCA226733BB100FC945D /* VPBottomBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPBottomBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		989BCCA526733BB100FC945D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		989BCCA926733BB100FC945D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		989BCCAC26733BB100FC945D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		989BCCAE26733BB200FC945D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		989BCCB126733BB200FC945D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		989BCCB326733BB200FC945D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E98DE42674D4500097A304 /* VPBottomBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPBottomBar.swift; sourceTree = "<group>"; };
+		98E98DE52674D4500097A304 /* VPBottomBarProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPBottomBarProtocol.swift; sourceTree = "<group>"; };
+		98E98DE62674D4500097A304 /* VPBottomSubBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPBottomSubBar.swift; sourceTree = "<group>"; };
+		98E98DE72674D4500097A304 /* UICollectionViewCenterLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCenterLayout.swift; sourceTree = "<group>"; };
+		98E98DE82674D4500097A304 /* BottomBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		98E98D5A2674C57D0097A304 /* Frameworks */ = {
+		989BCC9F26733BB100FC945D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66C9114FBB48AAF43348EE53 /* Pods_VPBottomBar.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98E98DA92674CB7D0097A304 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EFF7D723241D6BD12BBA765 /* Pods_VPBottomBarExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		338A215964EB1A99C6719BA1 /* Frameworks */ = {
+		989BCC9926733BB100FC945D = {
 			isa = PBXGroup;
 			children = (
-				E92CFD87AC29CB8830B07300 /* Pods_VPBottomBar.framework */,
-				A7E662951867F2B937CF2D77 /* Pods_VPBottomBarExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		98E98D532674C57D0097A304 = {
-			isa = PBXGroup;
-			children = (
-				98E98D5F2674C57D0097A304 /* VPBottomBar */,
-				98E98DAD2674CB7D0097A304 /* VPBottomBarExample */,
-				98E98D5E2674C57D0097A304 /* Products */,
-				D6BA417F077D07736E73EE15 /* Pods */,
-				338A215964EB1A99C6719BA1 /* Frameworks */,
+				989BCCA426733BB100FC945D /* VPBottomBar */,
+				989BCCA326733BB100FC945D /* Products */,
+				98E98D1D2674B0D80097A304 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		98E98D5E2674C57D0097A304 /* Products */ = {
+		989BCCA326733BB100FC945D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98E98D5D2674C57D0097A304 /* VPBottomBar.framework */,
-				98E98DAC2674CB7D0097A304 /* VPBottomBarExample.app */,
+				989BCCA226733BB100FC945D /* VPBottomBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		98E98D5F2674C57D0097A304 /* VPBottomBar */ = {
+		989BCCA426733BB100FC945D /* VPBottomBar */ = {
 			isa = PBXGroup;
 			children = (
-				98E98D602674C57D0097A304 /* VPBottomBar.h */,
-				98E98D612674C57D0097A304 /* Info.plist */,
-				98E98D682674C64B0097A304 /* HelloWorld.swift */,
+				989BCCA526733BB100FC945D /* AppDelegate.swift */,
+				989BCCA926733BB100FC945D /* ViewController.swift */,
+				98E98DE32674D4500097A304 /* Source */,
+				989BCCAB26733BB100FC945D /* Main.storyboard */,
+				989BCCAE26733BB200FC945D /* Assets.xcassets */,
+				989BCCB026733BB200FC945D /* LaunchScreen.storyboard */,
+				989BCCB326733BB200FC945D /* Info.plist */,
 			);
 			path = VPBottomBar;
 			sourceTree = "<group>";
 		};
-		98E98DAD2674CB7D0097A304 /* VPBottomBarExample */ = {
+		98E98D1D2674B0D80097A304 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98E98DAE2674CB7D0097A304 /* AppDelegate.swift */,
-				98E98DB22674CB7D0097A304 /* ViewController.swift */,
-				98E98DB42674CB7D0097A304 /* Main.storyboard */,
-				98E98DB72674CB7D0097A304 /* Assets.xcassets */,
-				98E98DB92674CB7D0097A304 /* LaunchScreen.storyboard */,
-				98E98DBC2674CB7D0097A304 /* Info.plist */,
 			);
-			path = VPBottomBarExample;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D6BA417F077D07736E73EE15 /* Pods */ = {
+		98E98DE32674D4500097A304 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				0A889BD4469136B6DBC656D2 /* Pods-VPBottomBar.debug.xcconfig */,
-				2832232C9FF08CBB09233402 /* Pods-VPBottomBar.release.xcconfig */,
-				4664150EB079AA41DB8785FA /* Pods-VPBottomBarExample.debug.xcconfig */,
-				50AD9A11BF5F9E8279EB53BF /* Pods-VPBottomBarExample.release.xcconfig */,
+				98E98DE42674D4500097A304 /* VPBottomBar.swift */,
+				98E98DE52674D4500097A304 /* VPBottomBarProtocol.swift */,
+				98E98DE62674D4500097A304 /* VPBottomSubBar.swift */,
+				98E98DE72674D4500097A304 /* UICollectionViewCenterLayout.swift */,
+				98E98DE82674D4500097A304 /* BottomBarCell.swift */,
 			);
-			path = Pods;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		98E98D582674C57D0097A304 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98E98D622674C57D0097A304 /* VPBottomBar.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		98E98D5C2674C57D0097A304 /* VPBottomBar */ = {
+		989BCCA126733BB100FC945D /* VPBottomBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98E98D652674C57D0097A304 /* Build configuration list for PBXNativeTarget "VPBottomBar" */;
+			buildConfigurationList = 989BCCB626733BB200FC945D /* Build configuration list for PBXNativeTarget "VPBottomBar" */;
 			buildPhases = (
-				6A8EA9C0979BF05227295067 /* [CP] Check Pods Manifest.lock */,
-				98E98D582674C57D0097A304 /* Headers */,
-				98E98D592674C57D0097A304 /* Sources */,
-				98E98D5A2674C57D0097A304 /* Frameworks */,
-				98E98D5B2674C57D0097A304 /* Resources */,
+				989BCC9E26733BB100FC945D /* Sources */,
+				989BCC9F26733BB100FC945D /* Frameworks */,
+				989BCCA026733BB100FC945D /* Resources */,
+				98E98D432674B3830097A304 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,47 +126,24 @@
 			);
 			name = VPBottomBar;
 			productName = VPBottomBar;
-			productReference = 98E98D5D2674C57D0097A304 /* VPBottomBar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		98E98DAB2674CB7D0097A304 /* VPBottomBarExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 98E98DBD2674CB7D0097A304 /* Build configuration list for PBXNativeTarget "VPBottomBarExample" */;
-			buildPhases = (
-				7D3ADA05433F842BCD33C915 /* [CP] Check Pods Manifest.lock */,
-				98E98DA82674CB7D0097A304 /* Sources */,
-				98E98DA92674CB7D0097A304 /* Frameworks */,
-				98E98DAA2674CB7D0097A304 /* Resources */,
-				357FDD1A04C56DA5F41984CE /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = VPBottomBarExample;
-			productName = VPBottomBarExample;
-			productReference = 98E98DAC2674CB7D0097A304 /* VPBottomBarExample.app */;
+			productReference = 989BCCA226733BB100FC945D /* VPBottomBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		98E98D542674C57D0097A304 /* Project object */ = {
+		989BCC9A26733BB100FC945D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					98E98D5C2674C57D0097A304 = {
-						CreatedOnToolsVersion = 12.5;
-						LastSwiftMigration = 1250;
-					};
-					98E98DAB2674CB7D0097A304 = {
+					989BCCA126733BB100FC945D = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
-			buildConfigurationList = 98E98D572674C57D0097A304 /* Build configuration list for PBXProject "VPBottomBar" */;
+			buildConfigurationList = 989BCC9D26733BB100FC945D /* Build configuration list for PBXProject "VPBottomBar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -199,134 +151,59 @@
 				en,
 				Base,
 			);
-			mainGroup = 98E98D532674C57D0097A304;
-			productRefGroup = 98E98D5E2674C57D0097A304 /* Products */;
+			mainGroup = 989BCC9926733BB100FC945D;
+			productRefGroup = 989BCCA326733BB100FC945D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98E98D5C2674C57D0097A304 /* VPBottomBar */,
-				98E98DAB2674CB7D0097A304 /* VPBottomBarExample */,
+				989BCCA126733BB100FC945D /* VPBottomBar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		98E98D5B2674C57D0097A304 /* Resources */ = {
+		989BCCA026733BB100FC945D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98E98DAA2674CB7D0097A304 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98E98DBB2674CB7D0097A304 /* LaunchScreen.storyboard in Resources */,
-				98E98DB82674CB7D0097A304 /* Assets.xcassets in Resources */,
-				98E98DB62674CB7D0097A304 /* Main.storyboard in Resources */,
+				989BCCB226733BB200FC945D /* LaunchScreen.storyboard in Resources */,
+				989BCCAF26733BB200FC945D /* Assets.xcassets in Resources */,
+				989BCCAD26733BB100FC945D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		357FDD1A04C56DA5F41984CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VPBottomBarExample/Pods-VPBottomBarExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VPBottomBarExample/Pods-VPBottomBarExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VPBottomBarExample/Pods-VPBottomBarExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A8EA9C0979BF05227295067 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VPBottomBar-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7D3ADA05433F842BCD33C915 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VPBottomBarExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		98E98D592674C57D0097A304 /* Sources */ = {
+		989BCC9E26733BB100FC945D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98E98D692674C64B0097A304 /* HelloWorld.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98E98DA82674CB7D0097A304 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98E98DB32674CB7D0097A304 /* ViewController.swift in Sources */,
-				98E98DAF2674CB7D0097A304 /* AppDelegate.swift in Sources */,
+				989BCCAA26733BB100FC945D /* ViewController.swift in Sources */,
+				98E98DEC2674D4500097A304 /* UICollectionViewCenterLayout.swift in Sources */,
+				98E98DED2674D4500097A304 /* BottomBarCell.swift in Sources */,
+				98E98DE92674D4500097A304 /* VPBottomBar.swift in Sources */,
+				98E98DEA2674D4500097A304 /* VPBottomBarProtocol.swift in Sources */,
+				989BCCA626733BB100FC945D /* AppDelegate.swift in Sources */,
+				98E98DEB2674D4500097A304 /* VPBottomSubBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		98E98DB42674CB7D0097A304 /* Main.storyboard */ = {
+		989BCCAB26733BB100FC945D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				98E98DB52674CB7D0097A304 /* Base */,
+				989BCCAC26733BB100FC945D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		98E98DB92674CB7D0097A304 /* LaunchScreen.storyboard */ = {
+		989BCCB026733BB200FC945D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				98E98DBA2674CB7D0097A304 /* Base */,
+				989BCCB126733BB200FC945D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -334,7 +211,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		98E98D632674C57D0097A304 /* Debug */ = {
+		989BCCB426733BB200FC945D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -368,7 +245,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -386,19 +262,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		98E98D642674C57D0097A304 /* Release */ = {
+		989BCCB526733BB200FC945D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,7 +306,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -444,89 +317,31 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		98E98D662674C57D0097A304 /* Debug */ = {
+		989BCCB726733BB200FC945D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A889BD4469136B6DBC656D2 /* Pods-VPBottomBar.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = VPBottomBar/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.developer.VPBottomBar;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		98E98D672674C57D0097A304 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2832232C9FF08CBB09233402 /* Pods-VPBottomBar.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = VPBottomBar/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.developer.VPBottomBar;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		98E98DBE2674CB7D0097A304 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4664150EB079AA41DB8785FA /* Pods-VPBottomBarExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KS2RRAF673;
-				INFOPLIST_FILE = VPBottomBarExample/Info.plist;
+				INFOPLIST_FILE = VPBottomBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.developer.VPBottomBarExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.VPBottomBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard provision";
 				SWIFT_VERSION = 5.0;
@@ -534,22 +349,21 @@
 			};
 			name = Debug;
 		};
-		98E98DBF2674CB7D0097A304 /* Release */ = {
+		989BCCB826733BB200FC945D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50AD9A11BF5F9E8279EB53BF /* Pods-VPBottomBarExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KS2RRAF673;
-				INFOPLIST_FILE = VPBottomBarExample/Info.plist;
+				INFOPLIST_FILE = VPBottomBar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.developer.VPBottomBarExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.VPBottomBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Wildcard provision";
 				SWIFT_VERSION = 5.0;
@@ -560,34 +374,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98E98D572674C57D0097A304 /* Build configuration list for PBXProject "VPBottomBar" */ = {
+		989BCC9D26733BB100FC945D /* Build configuration list for PBXProject "VPBottomBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98E98D632674C57D0097A304 /* Debug */,
-				98E98D642674C57D0097A304 /* Release */,
+				989BCCB426733BB200FC945D /* Debug */,
+				989BCCB526733BB200FC945D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98E98D652674C57D0097A304 /* Build configuration list for PBXNativeTarget "VPBottomBar" */ = {
+		989BCCB626733BB200FC945D /* Build configuration list for PBXNativeTarget "VPBottomBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98E98D662674C57D0097A304 /* Debug */,
-				98E98D672674C57D0097A304 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		98E98DBD2674CB7D0097A304 /* Build configuration list for PBXNativeTarget "VPBottomBarExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98E98DBE2674CB7D0097A304 /* Debug */,
-				98E98DBF2674CB7D0097A304 /* Release */,
+				989BCCB726733BB200FC945D /* Debug */,
+				989BCCB826733BB200FC945D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 98E98D542674C57D0097A304 /* Project object */;
+	rootObject = 989BCC9A26733BB100FC945D /* Project object */;
 }

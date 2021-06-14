@@ -1,13 +1,12 @@
 //
 //  ViewController.swift
-//  VPBottomBarExample
+//  VPBottomBar
 //
-//  Created by Vicky Prajapati on 12/06/21.
+//  Created by Vicky Prajapati on 11/06/21.
 //
 
 import UIKit
 import WebKit
-import VPBottomBar
 
 class ViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
@@ -64,7 +63,7 @@ extension ViewController: VPBottomBarProtocol {
     }
     
     func bottomNavBarItemClicked(_ objBottomNavItem: BottomNavItem) {
-        print(objBottomNavItem.imageTitle)
+        print(objBottomNavItem.imageName)
     }
 }
 
